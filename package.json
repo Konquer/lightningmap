@@ -1,0 +1,33 @@
+{
+  "name": "@sindres/lightningmap",
+  "version": "1.0.4",
+  "description": "Library that emits lightning locations in real time",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konquer/lightningmap.git"
+  },
+  "keywords": [
+    "lightning",
+    "location",
+    "real-time"
+  ],
+  "author": "Sindre Slungaard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Konquer/lightningmap/issues"
+  },
+  "homepage": "https://github.com/Konquer/lightningmap#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "ws": "^6.0.0"
+  }
+}
